@@ -1,0 +1,1 @@
+Before using this System, please create a SQL database name "hayahay" and import the hayahay.sql to create a table.

@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{530BAF28-EAB6-449E-BEE9-23E66908790D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Hayahay__Library_System.My.MyApplication</StartupObject>
+    <RootNamespace>Hayahay__Library_System</RootNamespace>
+    <AssemblyName>Hayahay! Library System</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Hayahay! Library System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Hayahay! Library System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.5.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Backup Application\Programming\mysql-connector-net-1.0.10-noinstall\bin\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BOOKS_MASTERLIST.Designer.vb">
+      <DependentUpon>BOOKS_MASTERLIST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BOOKS_MASTERLIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_PAY.Designer.vb">
+      <DependentUpon>FRM_PAY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_PAY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_LOGIN.Designer.vb">
+      <DependentUpon>FRM_LOGIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_LOGIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_MAIN.Designer.vb">
+      <DependentUpon>FRM_MAIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_MAIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_REGISTRATION.Designer.vb">
+      <DependentUpon>FRM_REGISTRATION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_REGISTRATION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_SPLASH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_SPLASH.Designer.vb">
+      <DependentUpon>FRM_SPLASH.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hayahayDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hayahayDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hayahayDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hayahayDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="mysql.vb" />
+    <Compile Include="SINGLE_REPORT.Designer.vb">
+      <DependentUpon>SINGLE_REPORT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SINGLE_REPORT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tmpdata.Designer.vb">
+      <DependentUpon>tmpdata.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tmpdata.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USERS_MASTERLIST.Designer.vb">
+      <DependentUpon>USERS_MASTERLIST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="USERS_MASTERLIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BOOKS_MASTERLIST.resx">
+      <DependentUpon>BOOKS_MASTERLIST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_PAY.resx">
+      <DependentUpon>FRM_PAY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_LOGIN.resx">
+      <DependentUpon>FRM_LOGIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_MAIN.resx">
+      <DependentUpon>FRM_MAIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_REGISTRATION.resx">
+      <DependentUpon>FRM_REGISTRATION.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_SPLASH.resx">
+      <DependentUpon>FRM_SPLASH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Report3.rdlc" />
+    <EmbeddedResource Include="SINGLE_REPORT.resx">
+      <DependentUpon>SINGLE_REPORT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tmpdata.resx">
+      <DependentUpon>tmpdata.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USERS_MASTERLIST.resx">
+      <DependentUpon>USERS_MASTERLIST.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="hayahayDataSet.xsc">
+      <DependentUpon>hayahayDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="hayahayDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hayahayDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hayahayDataSet.xss">
+      <DependentUpon>hayahayDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="hayahayDataSet1.xsc">
+      <DependentUpon>hayahayDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="hayahayDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hayahayDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hayahayDataSet1.xss">
+      <DependentUpon>hayahayDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
